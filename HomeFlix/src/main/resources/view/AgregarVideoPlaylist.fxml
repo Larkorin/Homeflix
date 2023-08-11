@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="723.0" prefWidth="622.0" style="-fx-background-color: #FF8C00;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerAgregarVideoPlaylist">
+    <children>
+        <ImageView fitHeight="135.0" fitWidth="171.0" layoutX="241.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@ChifrijoLogo.png" />
+            </image>
+        </ImageView>
+        <Accordion layoutX="424.0" layoutY="247.0" />
+        <Accordion layoutX="366.0" layoutY="228.0" />
+        <Button layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#volverPlaylist" prefHeight="27.0" prefWidth="56.0" style="-fx-background-color: #B1896A; -fx-border-radius: 5px; -fx-background-radius: 10px; -fx-border-color: #000000;" text="Volver" textFill="WHITE" />
+        <TableView fx:id="tblVideos" layoutX="55.0" layoutY="312.0" prefHeight="366.0" prefWidth="511.0">
+            <columns>
+                <TableColumn fx:id="nombreCO" editable="false" prefWidth="149.0" text="Nombre del Video" />
+                <TableColumn fx:id="categoriaCO" editable="false" prefWidth="136.0" text="Categoria" />
+                <TableColumn fx:id="localizacionCO" editable="false" prefWidth="118.0" text="Localizacion" />
+                <TableColumn fx:id="duracionCO" editable="false" prefWidth="107.0" text="Duracion" />
+            </columns>
+        </TableView>
+        <Button layoutX="465.0" layoutY="689.0" mnemonicParsing="false" onAction="#seleccionarVideo" prefHeight="27.0" prefWidth="149.0" style="-fx-background-color: #B1896A; -fx-border-radius: 5px; -fx-background-radius: 10px; -fx-border-color: #000000;" text="Seleccionar Video" textFill="WHITE" />
+      <Label fx:id="nombrePlaylistLB" alignment="CENTER" layoutY="163.0" prefHeight="22.0" prefWidth="623.0" text="Agregar Video a" textAlignment="CENTER">
+         <font>
+            <Font name="Sitka Small" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

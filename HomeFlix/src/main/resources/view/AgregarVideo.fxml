@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FF8C00;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerAgregarVideo">
+   <children>
+      <Text layoutX="204.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar un video">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nombreTF" layoutX="70.0" layoutY="200.0" />
+      <TextField fx:id="categoriaTF" layoutX="70.0" layoutY="286.0" />
+      <TextField fx:id="descripcionTF" layoutX="378.0" layoutY="200.0" prefWidth="149.0" />
+      <Text layoutX="79.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="79.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="387.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="470.0" layoutY="346.0" mnemonicParsing="false" onAction="#botonAgregar" prefHeight="27.0" prefWidth="102.0" style="-fx-background-color: #B1896A; -fx-border-color: #000000; -fx-border-radius: 5px; -fx-background-radius: 10px;" text="Agregar" />
+      <Button layoutX="40.0" layoutY="346.0" mnemonicParsing="false" onAction="#volverPrincipal" prefHeight="27.0" prefWidth="102.0" style="-fx-background-color: #B1896A; -fx-border-color: #000000; -fx-border-radius: 5px; -fx-background-radius: 10px;" text="Volver" />
+      <ImageView fitHeight="99.0" fitWidth="102.0" layoutX="249.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ChifrijoLogo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="383.0" layoutY="254.0" mnemonicParsing="false" onAction="#buscarVideo" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #B1896A; -fx-border-color: #000000; -fx-border-radius: 5px; -fx-background-radius: 10px;" text="Seleccionar Video" />
+      <Label fx:id="videoLB" alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="290.0" prefHeight="17.0" prefWidth="250.0" />
+      <Label fx:id="videoDuracion" layoutX="527.0" layoutY="14.0" prefHeight="17.0" prefWidth="58.0" visible="false" />
+   </children>
+</AnchorPane>
